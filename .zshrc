@@ -22,14 +22,22 @@ precmd () {
 
 setopt prompt_subst
 PROMPT='%F{blue} %c${vcs_info_msg_0_}%F{blue} %(?/%F{blue}/%F{red})$ %{$reset_color%}'
+
+function zle-line-init zle-keymap-select {
+	RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/ }"
+	RPS2=$RPS1
+	zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
 autoload select-word-style
 select-word-style shell
 
 if [[ -x "`whence -p dircolors`" ]]; then
-  eval `dircolors`
-  alias ls='ls -F --color=auto'
+	eval `dircolors`
+	alias ls='ls -F --color=auto'
 else
-  alias ls='ls -F'
+	alias ls='ls -F'
 fi
 
 HISTFILE=~/.zhistory
@@ -46,3 +54,4 @@ setopt interactivecomments # pound sign in interactive prompt
 setopt auto_cd
 
 REPORTTIME=10
+export EDITOR=vim
