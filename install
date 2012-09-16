@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in .bash .bash_logout .bash_profile .gitconfig .tmux.cfg  .vim  .vimrc 
+for i in .bash .bash_logout .bash_profile .gitconfig .tmux.conf  .vim  .vimrc 
 do
 	rm -rf $HOME/$i;
 	ln -s $PWD/$i $HOME/$i;
