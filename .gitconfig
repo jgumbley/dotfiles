@@ -1,19 +1,13 @@
 [user]
-  name = Shawn Biddle
-  email = shawncplus@gmail.com
-[diff]
-  external = git_diff_wrapper
+	name = Magnus Ernstsson
+	email = magnus@ernstsson.net
 [pager]
-  diff =
+	diff =
 [color]
-  ui = auto
+	ui = auto
 [alias]
-  st = status -a
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative
-  ch = checkout -
-[merge]
-    tool = threesome
-[mergetool "threesome"]
-    cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
-    trustExitCode = true
-# vim: set et :
+	st = status
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative
+	ch = checkout -
+[core]
+	excludesfile = ~/.gitignore

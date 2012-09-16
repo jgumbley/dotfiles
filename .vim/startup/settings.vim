@@ -1,6 +1,6 @@
 "============== General Settings ===============
+set gfn=Menlo:h13
 set dict=/usr/share/dict/words
-set cursorline
 set showcmd
 set ruler
 set incsearch
@@ -34,7 +34,7 @@ set cc=+1,+2
 
 set linespace=0
 set history=1000
-set list listchars=tab:› ,trail:-,extends:>,precedes:<,eol:¬
+set list listchars=tab:▸ ,trail:-,extends:>,precedes:<,eol:¬
 
 set laststatus=2
 set ffs=unix
@@ -62,3 +62,8 @@ endif
 
 let g:Powerline_symbols = 'fancy'
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+
+set timeoutlen=0
+if has("gui_running")
+	set guioptions=egmrt
+endif
