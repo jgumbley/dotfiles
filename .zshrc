@@ -12,16 +12,16 @@ zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{11}%r'
 zstyle ':vcs_info:*' enable git svn
 precmd () {
 	    if [[ -z $(git ls-files --other --exclude-standard 2> /dev/null) ]] {
-			zstyle ':vcs_info:*' formats ' [%F{green}%b%c%u%F{blue}]'
+			zstyle ':vcs_info:*' formats ' [%F{green}%b%c%u%F{blue}]%F{black}%f'
 		} else {
-		zstyle ':vcs_info:*' formats ' [%F{green}%b%c%u%F{red}●%F{blue}]'
+		zstyle ':vcs_info:*' formats ' [%F{green}%b%c%u%F{red}●%F{blue}]%F{black}%f'
 	}
 
 	vcs_info
 }
 
 setopt prompt_subst
-PROMPT='%F{blue} %c${vcs_info_msg_0_}%F{blue} %F $ %{$reset_color%}'
+PROMPT='%F{blue} %c${vcs_info_msg_0_}%F{blue} %F $ %F{black}%f'
 
 function zle-line-init zle-keymap-select {
 	RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/ }"

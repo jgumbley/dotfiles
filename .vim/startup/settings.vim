@@ -10,11 +10,7 @@ set synmaxcol=0
 set term=xterm-256color
 set display=uhex
 set shortmess=aAIsT
-set cmdheight=2
 set nowrap
-if &diff
-	set wrap
-endif
 let &scrolloff=999-&scrolloff
 
 set completeopt=menu
