@@ -43,6 +43,7 @@ set vb
 set ttym=xterm2
 
 set wrap
+set hlsearch
 
 set tags=~/.vim/tags/tags
 
