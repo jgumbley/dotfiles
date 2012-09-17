@@ -21,7 +21,7 @@ precmd () {
 }
 
 setopt prompt_subst
-PROMPT='%F{blue} %c${vcs_info_msg_0_}%F{blue} %(?/%F{blue}/%F{red})$ %{$reset_color%}'
+PROMPT='%F{blue} %c${vcs_info_msg_0_}%F{blue} %F $ %{$reset_color%}'
 
 function zle-line-init zle-keymap-select {
 	RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/ }"
