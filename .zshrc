@@ -33,13 +33,6 @@ zle -N zle-keymap-select
 autoload select-word-style
 select-word-style shell
 
-if [[ -x "`whence -p dircolors`" ]]; then
-	eval `dircolors`
-	alias ls='ls -F --color=auto'
-else
-	alias ls='ls -F'
-fi
-
 HISTFILE=~/.zhistory
 HISTSIZE=SAVEHIST=10000
 setopt incappendhistory 
@@ -55,3 +48,5 @@ setopt auto_cd
 
 REPORTTIME=10
 export EDITOR=vim
+export CLICOLOR=1
+export COLORFGBG='0;15'
