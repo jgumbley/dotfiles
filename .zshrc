@@ -51,3 +51,4 @@ export EDITOR=vim
 export CLICOLOR=1
 export COLORFGBG='0;15'
 source ~/.rvm/scripts/rvm
+set -o vi
