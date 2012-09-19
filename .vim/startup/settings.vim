@@ -22,8 +22,9 @@ set nocompatible
 set enc=utf-8
 set fillchars=vert:¦
 
-set tabstop=4
-set shiftwidth=4
+set expandtab
+set tabstop=2
+set shiftwidth=2
 set foldcolumn=1
 set cc=+1,+2
 
