@@ -12,3 +12,4 @@ vno <left> <Nop>
 vno <right> <Nop>
 vno <up> <Nop>
 map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
+map <F3> :NERDTree<CR><CR>
