@@ -1,8 +1,5 @@
 call pathogen#runtime_append_all_bundles()
 
-"============== Custom scripts ===============
-source ~/.vim/after/syntaxcheck.vim
-
 "============== Filetype stuff ===============
 filetype plugin on
 filetype indent on
@@ -16,8 +13,4 @@ source ~/.vim/startup/color.vim
 source ~/.vim/startup/functions.vim
 source ~/.vim/startup/mappings.vim
 source ~/.vim/startup/settings.vim
-
-" Syntax-specific settings
-source ~/.vim/startup/vim.vim
-source ~/.vim/startup/yaml.vim
-
+set colorcolumn=0

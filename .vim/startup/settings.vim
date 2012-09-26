@@ -61,12 +61,4 @@ set timeoutlen=0
 if has("gui_running")
 	set guioptions=egmrt
 endif
-highlight LineNr ctermfg=darkblue
-highlight NonText ctermfg=grey
-highlight SpecialKey ctermfg=grey
-highlight Search ctermbg=darkblue ctermfg=white
-highlight Highlights ctermfg=darkred
-autocmd BufWinEnter * match Highlights /\s\+$\| \+\ze\t\|[^\t]\zs\t\+\|\%>80v.\+/
-autocmd BufWinEnter * match Highlights /\s\+$\| \+\ze\t\|[^\t]\zs\t\+\|\%>80v.\+/
-autocmd InsertEnter * match Highlights /\s\+\%#\@<!$\| \+\ze\t\|[^\t]\zs\t\+\|\%>80v.\+/
-autocmd InsertLeave * match Highlights /\s\+$\| \+\ze\t\|[^\t]\zs\t\+\|\%>80v.\+/
+autocmd BufWinEnter,BufRead,BufWrite,BufNewFile *.md setfiletype markdown
