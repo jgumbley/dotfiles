@@ -11,7 +11,6 @@ set term=xterm-256color
 set display=uhex
 set shortmess=aAIsT
 set nowrap
-let &scrolloff=999-&scrolloff
 
 set completeopt=menu
 set mousemodel=popup
@@ -25,7 +24,6 @@ set fillchars=vert:¦
 set expandtab
 set tabstop=4
 set shiftwidth=2
-set foldcolumn=1
 set cc=+1,+2
 
 set linespace=0
@@ -48,7 +46,7 @@ if version > 720
 	set undodir=~/vimundo/
 endif
 
-let mapleader='\'
+let mapleader=','
 if exists('$TMUX')
   let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
   let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
@@ -63,3 +61,4 @@ set timeoutlen=0
 if has("gui_running")
 	set guioptions=egmrt
 endif
+autocmd BufWinEnter,BufRead,BufWrite,BufNewFile *.md setfiletype markdown

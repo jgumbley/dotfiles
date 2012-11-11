@@ -1,9 +1,6 @@
 call pathogen#runtime_append_all_bundles()
 map <F2> :NERDTreeToggle<CR>
 
-"============== Custom scripts ===============
-source ~/.vim/after/syntaxcheck.vim
-
 "============== Filetype stuff ===============
 filetype plugin on
 filetype indent on
@@ -17,6 +14,7 @@ source ~/.vim/startup/color.vim
 source ~/.vim/startup/functions.vim
 source ~/.vim/startup/mappings.vim
 source ~/.vim/startup/settings.vim
+<<<<<<< HEAD
 
 " Syntax-specific settings
 source ~/.vim/startup/vim.vim
@@ -25,3 +23,4 @@ source ~/.vim/startup/yaml.vim
 colorscheme wombat 
 cmap Q qa!
 set nofoldenable
+set colorcolumn=0

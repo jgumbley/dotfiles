@@ -13,4 +13,6 @@ autocmd BufNewFile,BufRead *.git/**
 augroup markdown
 	autocmd BufRead,BufNewFile *.mkd setfiletype mkd
 augroup END
-
+augroup puppet
+autocmd BufRead,BufNewFile *.pp setfiletype ruby
+augroup END
