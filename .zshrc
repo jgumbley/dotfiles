@@ -46,7 +46,5 @@ setopt interactivecomments # pound sign in interactive prompt
 setopt auto_cd
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH:$HOME/.rvm/bin
 REPORTTIME=10
-export EDITOR=vim
 export CLICOLOR=1
 export COLORFGBG='0;15'
-source ~/.rvm/scripts/rvm
