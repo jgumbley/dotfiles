@@ -14,13 +14,12 @@ source ~/.vim/startup/color.vim
 source ~/.vim/startup/functions.vim
 source ~/.vim/startup/mappings.vim
 source ~/.vim/startup/settings.vim
-<<<<<<< HEAD
 
 " Syntax-specific settings
-source ~/.vim/startup/vim.vim
-source ~/.vim/startup/yaml.vim
+"source ~/.vim/startup/vim.vim
+"source ~/.vim/startup/yaml.vim
 
-colorscheme wombat 
+colorscheme wombat256
 cmap Q qa!
 set nofoldenable
 set colorcolumn=0
