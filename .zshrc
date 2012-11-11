@@ -16,38 +16,37 @@ precmd () {
                         } else {
                             zstyle ':vcs_info:*' formats ' [%F{green}%b%c%u%F{red}●%F{reset}]%f'
                             }
-                          
-                            vcs_info
-                        }
+                    vcs_info
+          }
 
-                          setopt prompt_subst
-                          PROMPT='%F{reset}%c${vcs_info_msg_0_}%F{reset} $ %f'
+setopt prompt_subst
+PROMPT='%F{blue}%c${vcs_info_msg_0_}%F{reset} $ %f'
 
-                          function zle-line-init zle-keymap-select {
-                            RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/ }"
-                            RPS2=$RPS1
-                            zle reset-prompt
-                          }
-                          zle -N zle-line-init
-                          zle -N zle-keymap-select
-                          autoload select-word-style
-                          select-word-style shell
+function zle-line-init zle-keymap-select {
+  RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/ }"
+  RPS2=$RPS1
+  zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+autoload select-word-style
+select-word-style shell
 
-                          HISTFILE=~/.zhistory
-                          HISTSIZE=SAVEHIST=10000
-                          setopt incappendhistory 
-                          setopt sharehistory
-                          setopt extendedhistory
+HISTFILE=~/.zhistory
+HISTSIZE=SAVEHIST=10000
+setopt incappendhistory 
+setopt sharehistory
+setopt extendedhistory
 
-                          setopt extendedglob
-                          unsetopt caseglob
+setopt extendedglob
+unsetopt caseglob
 
-                          setopt interactivecomments # pound sign in interactive prompt
+setopt interactivecomments # pound sign in interactive prompt
 
-                          setopt auto_cd
-                          export PATH=/opt/local/bin:/opt/local/sbin:$PATH:$HOME/.rvm/bin
-                          REPORTTIME=10
-                          export EDITOR=vim
-                          export CLICOLOR=1
-                          export COLORFGBG='0;15'
-                          source ~/.rvm/scripts/rvm
+setopt auto_cd
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH:$HOME/.rvm/bin
+REPORTTIME=10
+export EDITOR=vim
+export CLICOLOR=1
+export COLORFGBG='0;15'
+source ~/.rvm/scripts/rvm
