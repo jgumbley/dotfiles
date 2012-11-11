@@ -1,3 +1,4 @@
+#set -o vi
 autoload -U compinit
 compinit
 setopt completeinword
@@ -47,8 +48,13 @@ setopt interactivecomments # pound sign in interactive prompt
 setopt auto_cd
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH:$HOME/.rvm/bin
 REPORTTIME=10
-export EDITOR=vim
+#export EDITOR=vim
 export CLICOLOR=1
 export COLORFGBG='0;15'
-source ~/.rvm/scripts/rvm
-set -o vi
+
+bindkey "\e[1~" beginning-of-line
+bindkey "\e[4~" end-of-line
+alias h="history"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

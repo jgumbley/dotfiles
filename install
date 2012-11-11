@@ -1,6 +1,0 @@
-#!/bin/bash
-for i in .zshrc .gitconfig .tmux.conf  .vim  .vimrc 
-do
-	rm -rf $HOME/$i;
-	ln -s $PWD/$i $HOME/$i;
-done;

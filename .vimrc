@@ -1,4 +1,5 @@
 call pathogen#runtime_append_all_bundles()
+map <F2> :NERDTreeToggle<CR>
 
 "============== Custom scripts ===============
 source ~/.vim/after/syntaxcheck.vim
@@ -21,3 +22,6 @@ source ~/.vim/startup/settings.vim
 source ~/.vim/startup/vim.vim
 source ~/.vim/startup/yaml.vim
 
+colorscheme wombat 
+cmap Q qa!
+set nofoldenable

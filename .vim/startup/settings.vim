@@ -23,7 +23,7 @@ set enc=utf-8
 set fillchars=vert:¦
 
 set expandtab
-set tabstop=2
+set tabstop=4
 set shiftwidth=2
 set foldcolumn=1
 set cc=+1,+2
@@ -58,7 +58,6 @@ else
 endif
 
 let g:Powerline_symbols = 'fancy'
-call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
 set timeoutlen=0
 if has("gui_running")

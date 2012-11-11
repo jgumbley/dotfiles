@@ -1,6 +1,6 @@
 [user]
-	name = Magnus Ernstsson
-	email = magnus@ernstsson.net
+	name = Jim Gumbley 
+	email = j.gumbley@gmail.com 
 [pager]
 	diff =
 [color]
@@ -9,5 +9,6 @@
 	st = status
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative
 	ch = checkout -
+    la = log --oneline --decorate --graph --all
 [core]
 	excludesfile = ~/.gitignore
