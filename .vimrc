@@ -34,3 +34,6 @@ colorscheme wombat256
 cmap Q qa!
 set nofoldenable
 set colorcolumn=0
+
+" ensure vundle run
+":BundleInstall!
