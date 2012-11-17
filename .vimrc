@@ -9,10 +9,10 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
-"call pathogen#runtime_append_all_bundles()
-map <F2> :NERDTreeToggle<CR>
+Bundle 'Lokaltog/vim-powerline'
 
 "============== Script configs ===============
+map <F2> :NERDTreeToggle<CR>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 
@@ -21,10 +21,10 @@ filetype plugin on
 filetype indent on
 
 " Load custom settings
-"source ~/.vim/startup/color.vim
+source ~/.vim/startup/color.vim
 "source ~/.vim/startup/functions.vim
 source ~/.vim/startup/mappings.vim
-"source ~/.vim/startup/settings.vim
+source ~/.vim/startup/settings.vim
 
 " Syntax-specific settings
 "source ~/.vim/startup/vim.vim
