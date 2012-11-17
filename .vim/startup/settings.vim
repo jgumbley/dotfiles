@@ -62,3 +62,4 @@ if has("gui_running")
 	set guioptions=egmrt
 endif
 autocmd BufWinEnter,BufRead,BufWrite,BufNewFile *.md setfiletype markdown
+
