@@ -12,6 +12,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'rodjek/vim-puppet'
+Bundle 'vim-scripts/VimClojure'
 
 "============== Script configs ===============
 map <F2> :NERDTreeToggle<CR>
