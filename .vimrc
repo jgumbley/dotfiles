@@ -13,6 +13,10 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'rodjek/vim-puppet'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'kien/ctrlp'
+Bundle 'hynek/vim-python-pep8-indent'
+Bundle 'wincent/Command-T'
 
 "============== Script configs ===============
 map <F2> :NERDTreeToggle<CR>
@@ -34,9 +38,13 @@ source ~/.vim/startup/settings.vim
 "source ~/.vim/startup/yaml.vim
 
 colorscheme wombat256
-cmap Q qa!
 set nofoldenable
 set colorcolumn=0
+set noswapfile
+
+set expandtab       " tabs are converted to spaces
+set tabstop=4       " numbers of spaces of tab character
+set shiftwidth=4
 
 " ensure vundle run
 ":BundleInstall!
