@@ -17,6 +17,8 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/ctrlp'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'wincent/Command-T'
+Bundle 'wannesm/wmgraphviz.vim'
+Bundle 'Valloric/YouCompleteMe'
 
 "============== Script configs ===============
 map <F2> :NERDTreeToggle<CR>
@@ -46,5 +48,7 @@ set expandtab       " tabs are converted to spaces
 set tabstop=4       " numbers of spaces of tab character
 set shiftwidth=4
 
-" ensure vundle run
+" bind leader (not ladder) key
+let mapleader=","
+nnoremap <leader>a :echo("\<leader\> works! It is set to <leader>")<CR>
 ":BundleInstall!

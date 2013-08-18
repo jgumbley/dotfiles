@@ -49,6 +49,22 @@ REPORTTIME=10
 export CLICOLOR=1
 export COLORFGBG='0;15'
 
+alias vi='vim'
 alias gs='git status'
 export govuk_dev_dist='lucid'
 source /usr/local/bin/virtualenvwrapper.sh
+
+export MARKPATH=$HOME/.marks
+
+function jump { 
+    cd -P $MARKPATH/$1 2>/dev/null || echo "No such mark: $1"
+}
+function mark { 
+    mkdir -p $MARKPATH; ln -s $(pwd) $MARKPATH/$1
+}
+function unmark { 
+    rm -i $MARKPATH/$1 
+}
+function marks {
+    ls -l $MARKPATH | sed 's/  / /g' | cut -d' ' -f9- 
+}

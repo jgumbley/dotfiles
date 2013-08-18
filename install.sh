@@ -12,5 +12,3 @@ do
 done;
 # install vundles
 vim +BundleInstall +qall
-# shell up
-tmux
