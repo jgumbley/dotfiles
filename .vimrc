@@ -20,6 +20,8 @@ Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'kien/ctrlp.vim'
 Bundle 'wannesm/wmgraphviz.vim'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'tpope/vim-fugitive'
+Bundle 'int3/vim-extradite'
 
 "============== Script configs ===============
 map <F2> :NERDTreeToggle<CR>
@@ -64,5 +66,13 @@ function! MapCR()
    nnoremap <cr> :nohlsearch<cr>
 endfunction
 
+nnoremap <c-g> :Extradite!<cr>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+noremap j gj
+noremap k gk
+
+let mapleader = ","
+map <Leader>q :qa!
+map <Leader>n :new<CR>

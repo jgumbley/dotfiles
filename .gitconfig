@@ -28,3 +28,5 @@ protocol = https
 host = github.gds
 [http]
 	sslVerify = true
+[push]
+	default = simple

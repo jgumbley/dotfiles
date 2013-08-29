@@ -10,5 +10,6 @@ do
     rm -rf $HOME/$i;
     ln -s $PWD/$i $HOME/$i;
 done;
+
 # install vundles
 vim +BundleInstall +qall
