@@ -1,3 +1,6 @@
+export PATH="/usr/local/bin:$PATH"
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
 autoload -U compinit
 compinit
 setopt completeinword
@@ -52,7 +55,7 @@ export COLORFGBG='0;15'
 alias vi='vim'
 alias gs='git status'
 export govuk_dev_dist='lucid'
-source /usr/local/bin/virtualenvwrapper.sh
+source /opt/boxen/homebrew/bin/virtualenvwrapper.sh
 
 export MARKPATH=$HOME/.marks
 
@@ -68,3 +71,7 @@ function unmark {
 function marks {
     ls -l $MARKPATH | sed 's/  / /g' | cut -d' ' -f9- 
 }
+
+bindkey '[D' emacs-backward-word     # alt-cursor-left
+bindkey '[C' emacs-forward-word      # alt-cursor-right
+bindkey ' ' magic-space              # history completion with space too
