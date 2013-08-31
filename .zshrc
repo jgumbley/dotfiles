@@ -54,6 +54,7 @@ export COLORFGBG='0;15'
 
 alias vi='vim'
 alias gs='git status'
+alias q!=exit
 export govuk_dev_dist='lucid'
 source /opt/boxen/homebrew/bin/virtualenvwrapper.sh
 
@@ -75,3 +76,10 @@ function marks {
 bindkey '[D' emacs-backward-word     # alt-cursor-left
 bindkey '[C' emacs-forward-word      # alt-cursor-right
 bindkey ' ' magic-space              # history completion with space too
+
+## a quick way to get out of current directory ##
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias ports='netstat -tulan'

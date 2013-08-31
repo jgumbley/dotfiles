@@ -57,7 +57,6 @@ endif
 
 let g:Powerline_symbols = 'fancy'
 
-set timeoutlen=0
 if has("gui_running")
 	set guioptions=egmrt
 endif
