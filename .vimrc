@@ -1,5 +1,10 @@
 set nocompatible
 
+set shell=bash
+let mapleader = ","
+map <Leader>q :qa!<CR>
+map <Leader>n :new<CR>
+
 "============== Do Bundler Stuff ===============
 filetype off
 let g:Powerline_symbols = 'fancy'
@@ -22,6 +27,7 @@ Bundle 'wannesm/wmgraphviz.vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'tpope/vim-fugitive'
 Bundle 'int3/vim-extradite'
+Bundle 'christoomey/vim-tmux-navigator'
 
 "============== Script configs ===============
 map <F2> :NERDTreeToggle<CR>
@@ -73,6 +79,3 @@ let g:ctrlp_cmd = 'CtrlP'
 noremap j gj
 noremap k gk
 
-let mapleader = ","
-map <Leader>q :qa!
-map <Leader>n :new<CR>
