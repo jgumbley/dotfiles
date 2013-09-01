@@ -21,8 +21,11 @@ map <F2> :NERDTreeToggle<CR>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 
-Bundle 'Lokaltog/vim-powerline'
-let g:Powerline_symbols = 'fancy'
+Bundle 'bling/vim-airline'
+let g:airline_powerline_fonts = 1
+
+"Bundle 'Lokaltog/vim-powerline'
+"let g:Powerline_symbols = 'fancy'
 
 Bundle 'int3/vim-extradite'
 nnoremap <c-g> :Extradite!<cr>
@@ -31,6 +34,16 @@ Bundle 'kien/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+Bundle 'thoughtbot/vim-rspec'
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+Bundle 'jgdavey/tslime.vim'
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+
+Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'https://github.com/rking/vim-detailed'
 Bundle 'rodjek/vim-puppet'

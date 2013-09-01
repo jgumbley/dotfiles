@@ -54,7 +54,8 @@ export COLORFGBG='0;15'
 
 alias vi='vim'
 alias gs='git status'
-alias q!=exit
+alias gma='git commit -am'
+alias q=exit
 export govuk_dev_dist='lucid'
 source /opt/boxen/homebrew/bin/virtualenvwrapper.sh
 
