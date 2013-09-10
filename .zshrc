@@ -1,13 +1,18 @@
 export PATH="/usr/local/bin:$PATH"
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
+# activate menu selection
 autoload -U compinit
 compinit
-setopt completeinword
-eval "$(rbenv init - zsh)"
+zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+setopt completeinword
+
+# rbenv init
+eval "$(rbenv init - zsh)"
+
+# git status stuff
 autoload -Uz vcs_info
- 
 zstyle ':vcs_info:*' stagedstr '%F{28}●'
 zstyle ':vcs_info:*' unstagedstr '%F{11}●'
 zstyle ':vcs_info:*' check-for-changes true
@@ -22,6 +27,7 @@ precmd () {
         vcs_info
     }
 
+# prompt shuzz
 setopt prompt_subst
 PROMPT='%F{blue}%c${vcs_info_msg_0_}%F{reset} $ %f'
 
@@ -83,4 +89,4 @@ alias ..='cd ..'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias .....='cd ../../../../'
-alias ports='netstat -tulan'
+alias ports='netstat -pntl'
