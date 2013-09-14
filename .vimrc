@@ -20,6 +20,8 @@ Bundle 'scrooloose/nerdtree'
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
+Bundle 'jistr/vim-nerdtree-tabs'
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 Bundle 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
@@ -53,6 +55,7 @@ Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'wannesm/wmgraphviz.vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-haml'
 Bundle 'christoomey/vim-tmux-navigator'
 
 " can remove?
