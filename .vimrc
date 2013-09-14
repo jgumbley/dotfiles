@@ -20,6 +20,7 @@ Bundle 'scrooloose/nerdtree'
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
+let NERDTreeMapOpenInTab='<ENTER>'
 Bundle 'jistr/vim-nerdtree-tabs'
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
@@ -85,5 +86,9 @@ noremap k gk
 
 colorscheme wombat256
 colorscheme detailed
+hi TabLineFill ctermfg=Black ctermbg=Black
+hi TabLine ctermfg=Blue ctermbg=Yellow
+hi TabLineSel ctermfg=Red ctermbg=Yellow
 
-
+map <c-n> <Esc>:tabprev<CR>
+map <c-m> <Esc>:tabnext<CR>
