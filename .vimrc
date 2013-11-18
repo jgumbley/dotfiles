@@ -20,7 +20,8 @@ Bundle 'scrooloose/nerdtree'
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
-let NERDTreeMapOpenInTab='<ENTER>'
+let NERDTreeMapOpenInTab='t'
+let NERDTreeIgnore = ['\.pyc$']
 Bundle 'jistr/vim-nerdtree-tabs'
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 

@@ -63,7 +63,6 @@ alias gs='git status'
 alias gma='git commit -am'
 alias q=exit
 export govuk_dev_dist='lucid'
-source /opt/boxen/homebrew/bin/virtualenvwrapper.sh
 
 export MARKPATH=$HOME/.marks
 
@@ -90,3 +89,8 @@ alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias .....='cd ../../../../'
 alias ports='netstat -pntl'
+
+# virtualenv
+
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
