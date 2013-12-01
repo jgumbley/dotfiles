@@ -59,6 +59,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'fholgado/minibufexpl.vim'
 
 " can remove?
 " source ~/.vim/startup/color.vim
