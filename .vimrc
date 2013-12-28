@@ -27,6 +27,7 @@ map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 Bundle 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 "Bundle 'Lokaltog/vim-powerline'
 "let g:Powerline_symbols = 'fancy'
@@ -60,6 +61,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'fholgado/minibufexpl.vim'
+Bundle 'dart-lang/dart-vim-plugin'
 
 " can remove?
 " source ~/.vim/startup/color.vim
@@ -92,5 +94,5 @@ hi TabLineFill ctermfg=Black ctermbg=Black
 hi TabLine ctermfg=Blue ctermbg=Yellow
 hi TabLineSel ctermfg=Red ctermbg=Yellow
 
-map <c-n> <Esc>:tabprev<CR>
-map <c-m> <Esc>:tabnext<CR>
+map <c-n> <Esc>:bn<CR>
+map <c-m> <Esc>:bN<CR>
