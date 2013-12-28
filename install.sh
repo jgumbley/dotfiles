@@ -1,6 +1,7 @@
 #!/bin/bash
 # make sure we have vundle
 git submodule update --init
+
 # link everything up
 for i in .zshrc .gitconfig .tmux.conf  .vim  .vimrc 
 do
