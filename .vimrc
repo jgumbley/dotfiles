@@ -2,6 +2,18 @@ set nocompatible
 filetype off
 set encoding=utf-8
 
+
+" spacing and stuff
+filetype plugin on
+filetype indent on
+set expandtab       " tabs are converted to spaces
+set tabstop=4       " numbers of spaces of tab character
+set shiftwidth=4
+set nofoldenable
+set colorcolumn=0
+set noswapfile
+
+
 " bind leader (not ladder) key
 "
 let mapleader = ","
@@ -48,6 +60,9 @@ map <Leader>a :call RunAllSpecs()<CR>
 Bundle 'jgdavey/tslime.vim'
 let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 
+Bundle 'Valloric/YouCompleteMe'
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
+
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'https://github.com/rking/vim-detailed'
@@ -56,29 +71,18 @@ Bundle 'vim-scripts/VimClojure'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'wannesm/wmgraphviz.vim'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'dart-lang/dart-vim-plugin'
 
+
 " can remove?
 " source ~/.vim/startup/color.vim
 " source ~/.vim/startup/mappings.vim
 source ~/.vim/startup/settings.vim
 "
-
-" spacing and stuff
-filetype plugin on
-filetype indent on
-set expandtab       " tabs are converted to spaces
-set tabstop=4       " numbers of spaces of tab character
-set shiftwidth=4
-set nofoldenable
-set colorcolumn=0
-set noswapfile
-
 " able to jump nicely between splits
 "
 nnoremap <c-j> <c-w>j
