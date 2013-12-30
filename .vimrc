@@ -1,7 +1,7 @@
 set nocompatible
 filetype off
 set encoding=utf-8
-
+set colorcolumn=80
 
 " spacing and stuff
 filetype plugin on
@@ -63,13 +63,15 @@ let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 Bundle 'Valloric/YouCompleteMe'
 let g:ycm_key_list_select_completion = ['<TAB>', '<Down>']
 
+Bundle 'hynek/vim-python-pep8-indent'
+let g:pymode_indent = 0
+
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'https://github.com/rking/vim-detailed'
 Bundle 'rodjek/vim-puppet'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'wannesm/wmgraphviz.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
