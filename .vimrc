@@ -1,7 +1,6 @@
 set nocompatible
 filetype off
 set encoding=utf-8
-set colorcolumn=80
 
 " spacing and stuff
 filetype plugin on
@@ -102,3 +101,6 @@ hi TabLineSel ctermfg=Red ctermbg=Yellow
 
 map <c-n> <Esc>:bn<CR>
 map <c-m> <Esc>:bN<CR>
+
+set colorcolumn=80
+
