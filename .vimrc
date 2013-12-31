@@ -33,6 +33,7 @@ let g:airline#extensions#tabline#enabled = 1
 "Bundle 'Lokaltog/vim-powerline'
 "let g:Powerline_symbols = 'fancy'
 
+ 
 Bundle 'int3/vim-extradite'
 nnoremap <c-g> :Extradite!<cr>
 
@@ -103,4 +104,4 @@ set colorcolumn=0
 set noswapfile
 
 set colorcolumn=80
-
+set timeoutlen=1000 ttimeoutlen=0
