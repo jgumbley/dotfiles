@@ -2,16 +2,6 @@ set nocompatible
 filetype off
 set encoding=utf-8
 
-" spacing and stuff
-filetype plugin on
-filetype indent on
-set expandtab       " tabs are converted to spaces
-set tabstop=4       " numbers of spaces of tab character
-set shiftwidth=4
-set nofoldenable
-set colorcolumn=0
-set noswapfile
-
 
 " bind leader (not ladder) key
 "
@@ -101,6 +91,16 @@ hi TabLineSel ctermfg=Red ctermbg=Yellow
 
 map <c-n> <Esc>:bn<CR>
 map <c-m> <Esc>:bN<CR>
+
+" spacing and stuff
+filetype plugin on
+filetype indent on
+set expandtab       " tabs are converted to spaces
+set tabstop=4       " numbers of spaces of tab character
+set shiftwidth=4
+set nofoldenable
+set colorcolumn=0
+set noswapfile
 
 set colorcolumn=80
 
