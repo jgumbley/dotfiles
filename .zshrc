@@ -94,3 +94,8 @@ alias ports='netstat -pntl'
 
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
+
+# such alias
+alias such=git
+alias very=git
+alias wow='git status'

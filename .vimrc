@@ -105,3 +105,6 @@ set noswapfile
 
 set colorcolumn=80
 set timeoutlen=1000 ttimeoutlen=0
+set backspace=indent,eol,start
+
+
