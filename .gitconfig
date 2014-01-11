@@ -6,10 +6,18 @@
 [color]
 	ui = auto
 [alias]
-	st = status
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative
 	ch = checkout -
     la = log --oneline --decorate --graph --all
+    st = status -bs
+    ci = commit -v
+    co = checkout
+    cb = checkout -b 
+    br = branch
+    rb = rebase -i
+    idiff = diff --cached
+    lg = log --pretty=oneline --topo-order --graph --abbrev-commit --decorate
+    ru = remote update
 [core]
 	excludesfile = /opt/boxen/config/git/gitignore
 	editor = vim
