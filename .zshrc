@@ -99,3 +99,4 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias such=git
 alias very=git
 alias wow='git status'
+alias concern='git status'
