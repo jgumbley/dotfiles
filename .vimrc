@@ -68,6 +68,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'dart-lang/dart-vim-plugin'
+Bundle 'avakhov/vim-yaml'
 
 
 " can remove?
