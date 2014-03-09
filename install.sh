@@ -3,7 +3,7 @@
 git submodule update --init
 
 # link everything up
-for i in .zshrc .gitconfig .tmux.conf  .vim  .vimrc 
+for i in .zshrc .gitconfig .tmux.conf  .vim  .vimrc .ackrc
 do
     if [ -e $HOME/$i ]
 	    then cp -Rf $HOME/$i $HOME/$i.bak;

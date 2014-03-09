@@ -40,6 +40,7 @@ nnoremap <c-g> :Extradite!<cr>
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+set wildignore+=venv/*
 
 Bundle 'thoughtbot/vim-rspec'
 map <Leader>t :call RunCurrentSpecFile()<CR>
