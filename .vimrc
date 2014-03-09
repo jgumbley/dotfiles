@@ -30,18 +30,15 @@ Bundle 'bling/vim-airline'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
-"Bundle 'Lokaltog/vim-powerline'
-"let g:Powerline_symbols = 'fancy'
-
- 
 Bundle 'int3/vim-extradite'
 nnoremap <c-g> :Extradite!<cr>
 
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-set wildignore+=venv/*
-set wildignore+=build/*
+set wildignore+=*/venv/*
+set wildignore+=*/build/*
+set wildignore+=*.pyc
 
 Bundle 'thoughtbot/vim-rspec'
 map <Leader>t :call RunCurrentSpecFile()<CR>
