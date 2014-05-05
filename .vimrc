@@ -68,7 +68,7 @@ Bundle 'christoomey/vim-tmux-navigator'
 " Bundle 'fholgado/minibufexpl.vim'
 " try without using ctrp-p buf mode
 Bundle 'dart-lang/dart-vim-plugin'
-Bundle 'avakhov/vim-yaml'
+Bundle 'chase/vim-ansible-yaml'
 
 
 " can remove?

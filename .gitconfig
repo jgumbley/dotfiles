@@ -4,7 +4,7 @@
 [pager]
 	diff =
 [color]
-	ui = auto
+	ui = 1
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative
 	ch = checkout -
