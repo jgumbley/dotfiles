@@ -6,9 +6,9 @@ For
 
 - Vim
 - Tmux
-- ack
+- Ack
 - Zsh
-- git
+- Git
 
 Use
 ---
