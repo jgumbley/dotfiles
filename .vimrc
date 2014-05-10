@@ -6,7 +6,6 @@ set encoding=utf-8
 " bind leader (not ladder) key
 "
 let mapleader = ","
-map <Leader>q :qa!<CR>
 map <Leader>n :new<CR>
 
 " lets vundle the crap out of it
