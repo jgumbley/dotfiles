@@ -6,13 +6,25 @@ define green
 endef
 
 .PHONY: default¬
-default: vundles
+default: .deps.done .vim/bundle/vundle .vundles.done
 	$(call green,"[All steps successful]")
 
-.PHONY: vundles
-vundles:
+.deps.done:
+	brew install vim
+	brew install git
+	brew install tmux
+	touch .deps.done
+	$(call green,"[Installed Dependancies]")
+
+.vim/bundle/vundle:
+	git submodule update --init
+	$(call green,"[Cloned Vundle]")
+
+.vundles.done:
 	vim +BundleInstall +qall
+	touch .vundles.done
 	$(call green,"[Installed Vundles]")
 
 clean:
+	rm .*.done
 	$(call green,"[Not Cleaned up]")
