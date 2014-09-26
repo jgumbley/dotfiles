@@ -26,5 +26,6 @@ default: .deps.done .vim/bundle/vundle .vundles.done
 	$(call green,"[Installed Vundles]")
 
 clean:
-	rm .*.done
+	rm -f .*.done
+	rm -Rf .vim/bundle/
 	$(call green,"[Not Cleaned up]")
