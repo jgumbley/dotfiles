@@ -2,6 +2,8 @@ set nocompatible
 filetype off
 set encoding=utf-8
 
+colorscheme wombat256
+colorscheme detailed
 
 " bind leader (not ladder) key
 "
@@ -16,8 +18,8 @@ Bundle 'gmarik/vundle'
 
 " lets get some colors
 "
-Plugin 'Darktango'
-Plugin 'clordane'
+Plugin 'Darktango.vim'
+Plugin 'chlordane.vim'
 
 " there follow my plugins
 "
@@ -60,7 +62,6 @@ Bundle 'hynek/vim-python-pep8-indent'
 let g:pymode_indent = 0
 
 Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-fugitive'
 Bundle 'https://github.com/rking/vim-detailed'
 Bundle 'rodjek/vim-puppet'
 Bundle 'vim-scripts/VimClojure'
@@ -89,8 +90,6 @@ nnoremap <c-l> <c-w>l
 noremap j gj
 noremap k gk
 
-colorscheme wombat256
-colorscheme detailed
 hi TabLineFill ctermfg=Black ctermbg=Black
 hi TabLine ctermfg=Blue ctermbg=Yellow
 hi TabLineSel ctermfg=Red ctermbg=Yellow

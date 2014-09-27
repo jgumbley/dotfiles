@@ -20,6 +20,10 @@ default: .deps.done .vim/bundle/vundle .vundles.done
 	git submodule update --init
 	$(call green,"[Cloned Vundle]")
 
+.PHONY: install
+install:
+	vim +BundleInstall +qall
+
 .vundles.done:
 	vim +BundleInstall +qall
 	.vim/bundle/YouCompleteMe/install.sh
