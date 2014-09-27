@@ -2,8 +2,6 @@ set nocompatible
 filetype off
 set encoding=utf-8
 
-colorscheme wombat256
-colorscheme detailed
 
 " bind leader (not ladder) key
 "
@@ -75,6 +73,8 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'dart-lang/dart-vim-plugin'
 Bundle 'chase/vim-ansible-yaml'
 
+colorscheme wombat256
+colorscheme detailed
 
 " can remove?
 " source ~/.vim/startup/color.vim
