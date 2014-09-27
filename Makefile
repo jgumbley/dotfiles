@@ -22,6 +22,7 @@ default: .deps.done .vim/bundle/vundle .vundles.done
 
 .vundles.done:
 	vim +BundleInstall +qall
+	.vim/bundle/YouCompleteMe/install.sh
 	touch .vundles.done
 	$(call green,"[Installed Vundles]")
 

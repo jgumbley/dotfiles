@@ -14,6 +14,11 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
+" lets get some colors
+"
+Plugin 'Darktango'
+Plugin 'clordane'
+
 " there follow my plugins
 "
 Bundle 'scrooloose/nerdtree'
