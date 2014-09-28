@@ -8,9 +8,6 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 setopt completeinword
 
-# rbenv init
-eval "$(rbenv init - zsh)"
-
 # git status stuff
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' stagedstr '%F{28}●'
