@@ -93,6 +93,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
 # such alias
+alias c=clear
 alias such=git
 alias very=git
 alias wow='git status'
