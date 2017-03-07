@@ -10,8 +10,9 @@ map <Leader>n :new<CR>
 
 " lets vundle the crap out of it
 "
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+set rtp+=~/.vim/bundle/
+call vundle#begin()
 Bundle 'gmarik/vundle'
 
 " there follow my plugins
@@ -55,8 +56,6 @@ Bundle 'hynek/vim-python-pep8-indent'
 let g:pymode_indent = 0
 
 Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-fugitive'
-Bundle 'https://github.com/rking/vim-detailed'
 Bundle 'rodjek/vim-puppet'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'airblade/vim-gitgutter'
@@ -68,6 +67,8 @@ Bundle 'christoomey/vim-tmux-navigator'
 " try without using ctrp-p buf mode
 Bundle 'dart-lang/dart-vim-plugin'
 Bundle 'chase/vim-ansible-yaml'
+Bundle 'rking/vim-detailed'
+call vundle#end()
 
 
 " can remove?

@@ -9,8 +9,11 @@ endef
 default: vundles
 	$(call green,"[All steps successful]")
 
+~/.vim/bundle/Vundle.vim:
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 .PHONY: vundles
-vundles:
+vundles: ~/.vim/bundle/Vundle.vim
 	vim +BundleInstall +qall
 	$(call green,"[Installed Vundles]")
 

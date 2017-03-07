@@ -8,9 +8,6 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 setopt completeinword
 
-# rbenv init
-eval "$(rbenv init - zsh)"
-
 # git status stuff
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' stagedstr '%F{28}●'
@@ -62,7 +59,6 @@ alias vi='vim'
 alias gs='git status'
 alias gma='git commit -am'
 alias q=exit
-export govuk_dev_dist='lucid'
 
 export MARKPATH=$HOME/.marks
 
@@ -91,9 +87,6 @@ alias .....='cd ../../../../'
 alias ports='netstat -pntl'
 
 # virtualenv
-
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
 
 # such alias
 alias such=git
