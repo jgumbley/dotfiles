@@ -93,6 +93,7 @@ hi TabLineSel ctermfg=Red ctermbg=Yellow
 
 map <c-n> <Esc>:bn<CR>
 map <c-m> <Esc>:bN<CR>
+imap § <Esc>
 
 " spacing and stuff
 filetype plugin on
